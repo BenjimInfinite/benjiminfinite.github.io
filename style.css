@@ -9,7 +9,7 @@ body {
 header {
     background-color: #004d40; /* Dark teal */
     color: #ffffff; /* White text */
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -25,19 +25,19 @@ header a:hover {
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
 }
 
 .card {
     position: relative;
     background-color: #ffffff; /* White background */
     color: #004d40; /* Dark teal text */
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    height: 200px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
