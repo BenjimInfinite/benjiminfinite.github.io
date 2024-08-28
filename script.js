@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             const detailKey = card.getAttribute('data-detail');
             detailSection.innerHTML = `<p>${details[detailKey]}</p>`;
+            
+            // Smooth scroll to the detail section
+            detailSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
