@@ -37,7 +37,7 @@ main {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    height: 180px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@ main {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4); /* Dark overlay */
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(6px);
     transition: opacity 0.3s ease;
     z-index: 1;
 }
@@ -82,30 +82,4 @@ main {
     margin: 20px;
     font-size: 1.2em;
     color: #004d40; /* Dark teal text */
-}
-
-/* Specific card backgrounds with vibrant images or solid colors */
-#career {
-    background-color: #ffeb3b; /* Yellow background */
-    color: #004d40; /* Dark teal text */
-}
-
-#education {
-    background-color: #4caf50; /* Green background */
-    color: #ffffff; /* White text */
-}
-
-#thesis {
-    background-color: #2196f3; /* Blue background */
-    color: #ffffff; /* White text */
-}
-
-#projects {
-    background-color: #ff5722; /* Deep orange background */
-    color: #ffffff; /* White text */
-}
-
-#experience {
-    background-color: #9c27b0; /* Purple background */
-    color: #ffffff; /* White text */
 }
