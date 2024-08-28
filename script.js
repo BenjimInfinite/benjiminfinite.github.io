@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
 
     const details = {
-        career:'Details about your career prospective...',
+        career: 'Details about your career prospective...',
         education: 'Details about your educational prospective...',
         thesis: 'Details about your B.Sc. Thesis...',
         projects: 'Details about your projects...',
@@ -14,9 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             const detailKey = card.getAttribute('data-detail');
             detailSection.innerHTML = `<p>${details[detailKey]}</p>`;
-            
-            // Smooth scroll to the detail section
-            detailSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
