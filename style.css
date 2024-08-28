@@ -1,18 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #004d40; /* Dark teal text color */
 }
+
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #004d40; /* Dark teal */
+    color: #ffffff; /* White text */
     padding: 20px;
     text-align: center;
 }
+
 header a {
-    color: #ffa500;
+    color: #ffab00; /* Amber */
     text-decoration: none;
 }
 
@@ -27,10 +29,10 @@ main {
     padding: 20px;
 }
 
-main .card {
+.card {
     position: relative;
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff; /* White background */
+    color: #004d40; /* Dark teal text */
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -40,30 +42,32 @@ main .card {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-main .card-overlay {
+.card-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    backdrop-filter: blur(8px);
     transition: opacity 0.3s ease;
     z-index: 1;
 }
 
-main .card:hover .card-overlay {
+.card:hover .card-overlay {
     opacity: 0;
 }
 
-main .card h2 {
+.card h2 {
     z-index: 2;
     position: relative;
+    color: #004d40; /* Dark teal text */
 }
 
-main .card-group {
+.card-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -71,10 +75,37 @@ main .card-group {
 }
 
 #detail-section {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #b2dfdb; /* Light teal border */
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
     font-size: 1.2em;
+    color: #004d40; /* Dark teal text */
+}
+
+/* Specific card backgrounds with vibrant images or solid colors */
+#career {
+    background-color: #ffeb3b; /* Yellow background */
+    color: #004d40; /* Dark teal text */
+}
+
+#education {
+    background-color: #4caf50; /* Green background */
+    color: #ffffff; /* White text */
+}
+
+#thesis {
+    background-color: #2196f3; /* Blue background */
+    color: #ffffff; /* White text */
+}
+
+#projects {
+    background-color: #ff5722; /* Deep orange background */
+    color: #ffffff; /* White text */
+}
+
+#experience {
+    background-color: #9c27b0; /* Purple background */
+    color: #ffffff; /* White text */
 }
