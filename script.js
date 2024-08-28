@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
 
     const details = {
-        career: 'Details about your career prospective...',
+        <h3>Career Prospective</h3>
+        <p>Details about your career prospective...</p>
         education: 'Details about your educational prospective...',
         thesis: 'Details about your B.Sc. Thesis...',
         projects: 'Details about your projects...',
