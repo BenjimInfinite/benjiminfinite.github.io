@@ -1,10 +1,19 @@
-document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => {
-        if (card.classList.contains('active')) {
-            card.classList.remove('active');
-        } else {
-            document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
-            card.classList.add('active');
-        }
+document.addEventListener('DOMContentLoaded', () => {
+    const detailSection = document.getElementById('detail-section');
+    const cards = document.querySelectorAll('.card');
+
+    const details = {
+        career: 'Details about your career prospective...',
+        education: 'Details about your educational prospective...',
+        thesis: 'Details about your B.Sc. Thesis...',
+        projects: 'Details about your projects...',
+        experience: 'Details about your work experience...'
+    };
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const detailKey = card.getAttribute('data-detail');
+            detailSection.innerHTML = `<p>${details[detailKey]}</p>`;
+        });
     });
 });
