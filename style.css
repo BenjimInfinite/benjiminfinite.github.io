@@ -43,7 +43,7 @@ main {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    animation: cardEmergence 0.3s ease-out forwards;
+/*     animation: cardEmergence 0.3s ease-out forwards; */
     opacity: 0; /* Ensure cards are hidden initially */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     background-size: cover; /* Ensure the image covers the entire card */
