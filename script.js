@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const detailSection = document.getElementById('detail-section');
     const cards = document.querySelectorAll('.card');
     const hoverText = 'Click for Details'; // The text to show on hover
-    const displayDuration = 1000;  
+    const displayDuration = 500;  
 
     // Define the detail data
     const details = {
