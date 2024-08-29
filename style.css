@@ -78,13 +78,8 @@ main {
     grid-column: span 2;
 }
 
-/* Specific card backgrounds with images */
-#career {
+.card[data-detail="career"] {
     background-image: url('career.png');
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image in the card */
-    background-repeat: no-repeat; /* Avoid repeating the image */
-    background-color: #00FF00; /* Light gray fallback color */
 }
 
 #detail-section {
