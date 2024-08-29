@@ -42,10 +42,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    animation: cardEmergence 0.6s ease-out forwards;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    animation: cardEmergence 0.1s ease-out forwards;
     opacity: 0; /* Ensure cards are hidden initially */
-    transform: translateY(20px); /* Start slightly below the final position */
+    transform: translateY(2px); /* Start slightly below the final position */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     background-size: cover; /* Ensure the image covers the entire card */
     background-position: center; /* Center the image in the card */
