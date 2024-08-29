@@ -83,7 +83,7 @@ main {
     background-image: url('career.png');
 }
 .card[data-detail="education"] {
-    background-image: url('education.png');
+    background-image: url('education.jpg');
 }
 .card[data-detail="thesis"] {
     background-image: url('thesis.jpg');
