@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const detailSection = document.getElementById('detail-section');
     const cards = document.querySelectorAll('.card');
-    const hoverText = 'New Text on Hover'; // The text to show on hover
+    const hoverText = 'Click for Details'; // The text to show on hover
     const displayDuration = 2000; // 2 seconds 
 
     // Define the detail data
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('mouseover', () => {
             h2.textContent = hoverText; // Change text on hover
             setTimeout(() => {
-                h2.textContent = originalText; // Revert text after 2 seconds
+                h2.textContent = ''; // Revert text after 2 seconds
             }, displayDuration);
         });
 
