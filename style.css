@@ -43,7 +43,7 @@ main {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease, opacity 0.3s ease;
-/*     animation: cardEmergence 0.3s ease-out forwards; */
+    animation: cardEmergence 0.3s ease-out forwards;
     opacity: 0; /* Ensure cards are hidden initially */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     background-size: cover; /* Ensure the image covers the entire card */
@@ -107,7 +107,7 @@ main {
         transform: translateX(0); /* Start at the original position */
     }
     50% {
-        transform: translateX(-10px); /* Move to the left */
+        transform: translateX(-7px); /* Move to the left */
     }
     100% {
         transform: translateX(0); /* Return to the original position */
@@ -122,9 +122,9 @@ main {
 
 /* Define the keyframes for the card emergence animation */
 @keyframes cardEmergence {
-    0% {
+    90% {
         opacity: 0;
-        transform: translateY(10px); /* Start slightly below the final position */
+        transform: translateY(1px); /* Start slightly below the final position */
     }
     100% {
         opacity: 1;
