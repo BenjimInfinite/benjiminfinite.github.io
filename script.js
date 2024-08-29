@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(card => {
         const h2 = card.querySelector('h2');
         const originalText = h2.textContent; // Store the original text
+
         card.addEventListener('mouseover', () => {
             h2.textContent = hoverText; // Change text on hover
             setTimeout(() => {
@@ -26,12 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         card.addEventListener('mouseout', () => {
             card.classList.add('animate-left'); // Add animation class
-    
+
             // Remove the class after the animation is complete
             card.addEventListener('animationend', () => {
                 card.classList.remove('animate-left');
             }, { once: true }); 
-        
+        });
+
         card.addEventListener('click', () => {
             const detailKey = card.getAttribute('data-detail');
             
@@ -41,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 detailSection.innerHTML = `<p>No details available.</p>`;
             }
+
             // Scroll to the detail section
             detailSection.scrollIntoView({ behavior: 'smooth' });
         });
