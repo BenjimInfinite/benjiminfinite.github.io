@@ -38,7 +38,7 @@ main {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    height: 120px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
