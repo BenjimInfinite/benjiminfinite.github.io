@@ -33,8 +33,7 @@ main {
 .card {
     position: relative;
 /*     background-image: url('career.png');     */
-    background-color: #ffffff;
-    color: #004d40; /* Dark teal text */
+    color: #ffffff; /* Dark teal text */
     padding: 10px;
     border-radius: 10px;
     overflow: hidden;
@@ -84,7 +83,7 @@ main {
     background-image: url('career.png');
 }
 .card[data-detail="education"] {
-    background-image: url('career.png');
+    background-image: url('education.png');
 }
 .card[data-detail="thesis"] {
     background-image: url('career.png');
