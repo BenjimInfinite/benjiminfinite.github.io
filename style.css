@@ -76,9 +76,13 @@ main {
     grid-column: span 2;
 }
 
-/* Specific card backgrounds with online images */
+/* Specific card backgrounds with images */
 #career {
     background-image: url('tie-690084_1280-600x310.png');
+    background-size: cover; /* Ensure the image covers the entire card */
+    background-position: center; /* Center the image in the card */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    background-color: #f0f0f0; /* Light gray fallback color */
 }
 
 #detail-section {
