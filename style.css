@@ -30,8 +30,8 @@ main {
 
 .card {
     position: relative;
-    background-image: url('career.png');    
-/*     background-color: #ffffff; /* White background */ */
+/*     background-image: url('career.png');     */
+    background-color: #ffffff;
     color: #004d40; /* Dark teal text */
     padding: 10px;
     border-radius: 10px;
@@ -80,7 +80,7 @@ main {
 
 /* Specific card backgrounds with images */
 #career {
-    background-image: url('tie-690084_1280-600x310.png');
+    background-image: url('career.png');
     background-size: cover; /* Ensure the image covers the entire card */
     background-position: center; /* Center the image in the card */
     background-repeat: no-repeat; /* Avoid repeating the image */
