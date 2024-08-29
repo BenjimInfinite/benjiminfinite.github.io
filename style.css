@@ -33,7 +33,7 @@ main {
 .card {
     position: relative;
 /*     background-image: url('career.png');     */
-    color: #ffffff; /* Dark teal text */
+    color: #ffffff; 
     padding: 10px;
     border-radius: 10px;
     overflow: hidden;
@@ -69,7 +69,7 @@ main {
 .card h2 {
     z-index: 2;
     position: relative;
-    color: #004d40; /* Dark teal text */
+    color: #ffffff; /* Dark teal text */
 }
 
 .card-group {
