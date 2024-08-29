@@ -30,7 +30,7 @@ main {
 
 .card {
     position: relative;
-    background-color: #ffffff; /* White background */
+/*     background-color: #ffffff; /* White background */ */
     color: #004d40; /* Dark teal text */
     padding: 10px;
     border-radius: 10px;
@@ -48,8 +48,8 @@ main {
 }
 
 .card-overlay {
-    display: None;
-/*     position: absolute;
+/*     display: None;*/
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -57,7 +57,7 @@ main {
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
     transition: opacity 0.3s ease;
-    z-index: 1; */
+    z-index: 1; 
 }
 
 .card:hover .card-overlay {
