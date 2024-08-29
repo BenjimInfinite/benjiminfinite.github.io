@@ -84,6 +84,12 @@ main {
 .card[data-detail="career"] {
     background-image: url('career.png');
 }
+.card[data-detail="education"] {
+    background-image: url('career.png');
+}
+.card[data-detail="thesis"] {
+    background-image: url('career.png');
+}
 
 #detail-section {
     background-color: #ffffff; /* White background */
