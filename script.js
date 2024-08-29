@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 detailSection.innerHTML = `<p>No details available.</p>`;
             }
+            // Scroll to the detail section
+            detailSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
