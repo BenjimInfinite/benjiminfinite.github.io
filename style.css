@@ -99,3 +99,22 @@ main {
     font-size: 1.2em;
     color: #004d40; /* Dark teal text */
 }
+
+/* Define the keyframes for the animation */
+@keyframes moveLeftThenBack {
+    0% {
+        transform: translateX(0); /* Start at the original position */
+    }
+    50% {
+        transform: translateX(-10px); /* Move to the left */
+    }
+    100% {
+        transform: translateX(0); /* Return to the original position */
+    }
+}
+
+/* Apply the animation to the card */
+.card.animate-left {
+    animation: moveLeftThenBack 0.5s ease; /* Duration and timing function */
+}
+
