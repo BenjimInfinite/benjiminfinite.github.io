@@ -78,24 +78,9 @@ main {
 
 /* Specific card backgrounds with online images */
 #career {
-    background-image: url('https://fromdanielsdesk.com/wp-content/uploads/2020/06/tie-690084_1280-600x310.png');
+    background-image: url('tie-690084_1280-600x310.png');
 }
 
-#education {
-    background-image: url('https://example.com/education-image.jpg');
-}
-
-#thesis {
-    background-image: url('https://example.com/thesis-image.jpg');
-}
-
-#projects {
-    background-image: url('https://example.com/projects-image.jpg');
-}
-
-#experience {
-    background-image: url('https://example.com/experience-image.jpg');
-}
 #detail-section {
     background-color: #ffffff; /* White background */
     border: 1px solid #b2dfdb; /* Light teal border */
