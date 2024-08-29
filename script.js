@@ -21,11 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('mouseover', () => {
             h2.textContent = hoverText; // Change text on hover
             setTimeout(() => {
-                h2.textContent = ''; // Revert text after 2 seconds
+                h2.textContent = ''; 
             }, displayDuration);
         });
 
         card.addEventListener('mouseout', () => {
+            h2.textContent = originalText; 
             card.classList.add('animate-left'); // Add animation class
 
             // Remove the class after the animation is complete
