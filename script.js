@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const detailSection = document.getElementById('detail-section');
     const cards = document.querySelectorAll('.card');
     const hoverText = 'Click for Details'; // The text to show on hover
-    const displayDuration = 2000; // 2 seconds 
+    const displayDuration = 1000;  
 
     // Define the detail data
     const details = {
@@ -16,12 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach click event listeners to each card
     cards.forEach(card => {
         const h2 = card.querySelector('h2');
-        const originalText = h2.textContent; // Store the original text
+            const originalText = h2.textContent; // Store the original text
 
         card.addEventListener('mouseover', () => {
             h2.textContent = hoverText; // Change text on hover
             setTimeout(() => {
-                h2.textContent = ''; 
+                if (h2.textContent === hoverText) {
+                    h2.textContent = ''; 
+                }
             }, displayDuration);
         });
 
