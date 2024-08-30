@@ -101,7 +101,7 @@ main {
     background-image: url('pic/projects.jpg');
 }
 .card[data-detail="experience"] {
-    background-image: url('pic/experience.jpg');
+    background-image: url('pic/experience.webp');
 }
 
 #detail-section {
