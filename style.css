@@ -82,6 +82,19 @@ main {
     grid-column: span 2;
 }
 
+@media (max-width: 768px) {
+    .card-group {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .card-group {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+}
+
 .card[data-detail="career"] {
     background-image: url('pic/career.png');
 }
