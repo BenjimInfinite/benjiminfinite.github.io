@@ -36,6 +36,7 @@ main {
     color: #ffffff; 
     padding: 10px;
     border-radius: 10px;
+    text-align: center;    
     overflow: hidden;
     cursor: pointer;
     height: 180px;
@@ -70,6 +71,8 @@ main {
     z-index: 2;
     position: relative;
     color: #ffffff; /* Dark teal text */
+    justify-content: center;
+    align-items: center;
 }
 
 .card-group {
