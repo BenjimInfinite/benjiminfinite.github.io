@@ -105,7 +105,7 @@ main {
     background-image: url('pic/education_b.jpg');
 }
 .card[data-detail="thesis"] {
-    background-image: url('pic/thesis.jpg');
+    background-image: url('pic/thesis.png');
 }
 .card[data-detail="courses"] {
     background-image: url('pic/courses.jpg');
