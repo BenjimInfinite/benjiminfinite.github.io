@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #004d40; /* Dark teal */
+    background-color: #013d33; /* Dark teal */
     color: #ffffff; /* White text */
     padding: 10px;
     text-align: center;
@@ -102,10 +102,10 @@ main {
     background-image: url('pic/education.jpg');
 }
 .card[data-detail="educatin_b"] {
-    background-image: url('pic/education_b.jpg');
+    background-image: url('pic/education_b1.jpg');
 }
 .card[data-detail="thesis"] {
-    background-image: url('pic/thesis.png');
+    background-image: url('pic/thesis1.png');
 }
 .card[data-detail="courses"] {
     background-image: url('pic/courses.jpg');
