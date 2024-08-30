@@ -89,19 +89,19 @@ main {
     background-image: url('pic/education.jpg');
 }
 .card[data-detail="educatin_b"] {
-    background-image: url('pic/thesis.jpg');
+    background-image: url('pic/education_b.jpg');
 }
 .card[data-detail="thesis"] {
-    background-image: url('pic/education.jpg');
+    background-image: url('pic/thesis.jpg');
 }
 .card[data-detail="courses"] {
     background-image: url('pic/courses.jpg');
 }
 .card[data-detail="projects"] {
-    background-image: url('pic/education.jpg');
+    background-image: url('pic/projects.jpg');
 }
 .card[data-detail="experience"] {
-    background-image: url('pic/education.jpg');
+    background-image: url('pic/experience.jpg');
 }
 
 #detail-section {

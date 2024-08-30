@@ -16,19 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach click event listeners to each card
     cards.forEach(card => {
         const h2 = card.querySelector('h2');
-            const originalText = h2.textContent; // Store the original text
+            const originalText = h2.innerHTML; // Store the original text
 
         card.addEventListener('mouseover', () => {
-            h2.textContent = hoverText; // Change text on hover
+            h2.innerHTML = hoverText; // Change text on hover
             setTimeout(() => {
-                if (h2.textContent === hoverText) {
-                    h2.textContent = ''; 
+                if (h2.innerHTML === hoverText) {
+                    h2.innerHTML = ''; 
                 }
             }, displayDuration);
         });
 
         card.addEventListener('mouseout', () => {
-            h2.textContent = originalText; 
+            h2.innerHTML = originalText; 
             card.classList.add('animate-left'); // Add animation class
 
             // Remove the class after the animation is complete
