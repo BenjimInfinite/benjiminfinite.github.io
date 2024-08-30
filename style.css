@@ -85,8 +85,20 @@ main {
 .card[data-detail="education"] {
     background-image: url('pic/education.jpg');
 }
-.card[data-detail="thesis"] {
+.card[data-detail="educatin_b"] {
     background-image: url('pic/thesis.jpg');
+}
+.card[data-detail="thesis"] {
+    background-image: url('pic/education.jpg');
+}
+.card[data-detail="courses"] {
+    background-image: url('pic/education.jpg');
+}
+.card[data-detail="projects"] {
+    background-image: url('pic/education.jpg');
+}
+.card[data-detail="experience"] {
+    background-image: url('pic/education.jpg');
 }
 
 #detail-section {
