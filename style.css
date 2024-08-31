@@ -116,6 +116,9 @@ main {
 .card[data-detail="experience"] {
     background-image: url('pic/experience.webp');
 }
+.card[data-detail="volunteer"] {
+    background-image: url('pic/volunteer1.jpg');
+}
 
 #detail-section {
     background-color: #ffffff; /* White background */
