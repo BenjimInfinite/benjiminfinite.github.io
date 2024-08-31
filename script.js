@@ -1,54 +1,50 @@
 document.addEventListener('DOMContentLoaded', () => {
     const detailSection = document.getElementById('detail-section');
     const cards = document.querySelectorAll('.card');
-    const hoverText = 'Click for Details'; // The text to show on hover
-    const displayDuration = 500;  
+    const hoverText = 'Click for Details';
+    const displayDuration = 500;
 
-    // Define the detail data
-    const details = {
-        career: 'Details about your career prospective...',
-        education: 'Details about your educational prospective...',
-        thesis: 'Details about your B.Sc. Thesis...',
-        projects: 'Details about your projects...',
-        experience: 'Details about your work experience...'
+    // Function to load HTML content into the detail section
+    const loadDetailContent = (url) => {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                detailSection.innerHTML = data;
+                detailSection.scrollIntoView({ behavior: 'smooth' });
+            })
+            .catch(error => {
+                detailSection.innerHTML = `<p>Error loading content. Please try again later.</p>`;
+                console.error('Error loading detail:', error);
+            });
     };
 
-    // Attach click event listeners to each card
     cards.forEach(card => {
         const h2 = card.querySelector('h2');
-            const originalText = h2.innerHTML; // Store the original text
+        const originalText = h2.innerHTML;
 
         card.addEventListener('mouseover', () => {
-            h2.innerHTML = hoverText; // Change text on hover
+            h2.innerHTML = hoverText;
             setTimeout(() => {
                 if (h2.innerHTML === hoverText) {
-                    h2.innerHTML = ''; 
+                    h2.innerHTML = '';
                 }
             }, displayDuration);
         });
 
         card.addEventListener('mouseout', () => {
-            h2.innerHTML = originalText; 
-            card.classList.add('animate-left'); // Add animation class
+            h2.innerHTML = originalText;
+            card.classList.add('animate-left');
 
-            // Remove the class after the animation is complete
             card.addEventListener('animationend', () => {
                 card.classList.remove('animate-left');
-            }, { once: true }); 
+            }, { once: true });
         });
 
         card.addEventListener('click', () => {
             const detailKey = card.getAttribute('data-detail');
-            
-            // Check if detailKey exists in details
-            if (details[detailKey]) {
-                detailSection.innerHTML = `<p>${details[detailKey]}</p>`;
-            } else {
-                detailSection.innerHTML = `<p>No details available.</p>`;
-            }
+            const detailFile = `${detailKey}.html`; // e.g., career.html, education.html
 
-            // Scroll to the detail section
-            detailSection.scrollIntoView({ behavior: 'smooth' });
+            loadDetailContent(detailFile);
         });
     });
 });
