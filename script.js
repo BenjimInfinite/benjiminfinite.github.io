@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 50); // Start the animation almost immediately
     };
 
-    // Function to hide the loading bar
     const hideLoadingBar = () => {
         loadingBar.style.width = '100%';
         setTimeout(() => {
@@ -23,20 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 400); // Hide the loading bar after the animation completes
     };
 
-    // Function to load HTML content into the detail section
     const loadDetailContent = (url) => {
-        showLoadingBar(); // Show loading bar when starting to load
+        showLoadingBar(); 
 
         fetch(url)
             .then(response => response.text())
             .then(data => {
                 detailSection.innerHTML = data;
-                hideLoadingBar(); // Hide loading bar once content is loaded
+                hideLoadingBar();
                 detailSection.scrollIntoView({ behavior: 'smooth' });
             })
             .catch(error => {
                 detailSection.innerHTML = `<p>Error loading content. Please try again later.</p>`;
-                hideLoadingBar(); // Hide loading bar if there's an error
+                hideLoadingBar(); 
                 console.error('Error loading detail:', error);
             });
     };
