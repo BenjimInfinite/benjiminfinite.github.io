@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Prospects</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,34 +14,50 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
-        .section {
-            margin-bottom: 30px;
+        .tab-container {
+            display: flex;
+            border-bottom: 2px solid #ccc;
+            cursor: pointer;
         }
-        .section h2 {
+        .tab {
+            padding: 10px 20px;
+            border-right: 1px solid #ccc;
+            font-weight: bold;
+            color: #333;
+        }
+        .tab:last-child {
+            border-right: none;
+        }
+        .tab:hover {
             background-color: #f0f0f0;
-            padding: 10px;
-            border-left: 5px solid #007BFF;
-            margin-bottom: 10px;
         }
-        .section p, .section ul {
-            margin-left: 20px;
+        .tab.active {
+            background-color: #ddd;
+            color: #000;
         }
-        .section ul {
-            list-style-type: disc;
+        .content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+            margin-top: -1px;
         }
-        img {
+        .content.active {
             display: block;
-            margin-top: 20px;
-            max-width: 100%;
-            height: auto;
         }
     </style>
 </head>
 <body>
     <h1>Career Prospects</h1>
 
-    <div class="section">
-        <h2>Long-Term Goal</h2>
+    <div class="tab-container">
+        <div class="tab" data-target="content1">Long-Term Goal</div>
+        <div class="tab" data-target="content2">Career Path Outline</div>
+        <div class="tab" data-target="content3">How Will a Master’s Degree Help Me?</div>
+        <div class="tab" data-target="content4">What Requirements Do I Currently Meet?</div>
+    </div>
+
+    <div id="content1" class="content">
         <p>My ultimate goal is to establish my own company with the following key elements:</p>
         <ul>
             <li>A mission that is meaningful to me personally.</li>
@@ -51,8 +66,7 @@
         <p>I believe that becoming an expert data scientist with deep business knowledge, ample experience, and strong communication skills will enable me to achieve this goal.</p>
     </div>
 
-    <div class="section">
-        <h2>Career Path Outline</h2>
+    <div id="content2" class="content">
         <p>While many factors will influence my future, the main outline of my career path is as follows:</p>
         <ul>
             <li><strong>2027:</strong> Graduate with a Master’s degree. Begin working as a Junior Data Scientist, likely in a research role. Start learning about product management, either through self-study or by enrolling in a course.</li>
@@ -61,16 +75,29 @@
         </ul>
     </div>
 
-    <div class="section">
-        <h2>How Will a Master’s Degree Help Me?</h2>
+    <div id="content3" class="content">
         <p>My Master’s degree will contribute to achieving my long-term goals by providing advanced technical knowledge, networking opportunities, and exposure to industry practices.</p>
     </div>
 
-    <div class="section">
-        <h2>What Requirements for My Future Goal Do I Currently Meet?</h2>
+    <div id="content4" class="content">
         <p>I currently have a strong foundation in data science, relevant experience in the field, and growing communication skills. These aspects align with my future goals.</p>
     </div>
-    
-    <img src="pic/career.png" alt="Career Path Image">
+
+    <script>
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs and content sections
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+
+                // Add active class to the clicked tab and corresponding content
+                this.classList.add('active');
+                document.getElementById(this.getAttribute('data-target')).classList.add('active');
+            });
+        });
+
+        // Automatically trigger a click on the first tab to show the first content by default
+        document.querySelector('.tab').click();
+    </script>
 </body>
 </html>
