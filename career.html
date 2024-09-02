@@ -14,12 +14,16 @@
             font-weight: bold;
             margin-top: 10px;
         }
+        h1 {
+            border-bottom: 2px solid black; /* Adds the bottom line */
+            padding-bottom: 10px; /* Adds some space between the text and the line */
+        }
     </style>
 </head>
 <body>
     <div>
         <h1>Career Prospects</h1>
-        
+
         <div>
             <h2 class="collapsible">Long-Term Goal</h2>
             <div class="details">
@@ -64,8 +68,12 @@
     <script>
         document.querySelectorAll('.collapsible').forEach(function(title) {
             title.addEventListener('click', function() {
-                this.nextElementSibling.classList.toggle('details');
-                this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+                let details = this.nextElementSibling;
+                if (details.style.display === 'block') {
+                    details.style.display = 'none';
+                } else {
+                    details.style.display = 'block';
+                }
             });
         });
     </script>

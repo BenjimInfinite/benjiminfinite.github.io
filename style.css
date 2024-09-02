@@ -144,7 +144,7 @@ main {
 #detail-section {
     background-color: #ffffff; /* White background */
     border: 1px solid #b2dfdb; /* Light teal border */
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 20px;
     margin: 20px;
     font-size: 1.2em;
