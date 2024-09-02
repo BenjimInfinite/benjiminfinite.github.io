@@ -5,77 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Prospects</title>
     <style>
-        .details {
-            display: none;
-            margin-left: 20px;
-        }
-        .collapsible {
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 10px;
+        body {
+            font-family: Arial, sans-serif;
         }
         h1 {
-            border-bottom: 2px solid black; /* Adds the bottom line */
-            padding-bottom: 10px; /* Adds some space between the text and the line */
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .tab-container {
+            display: flex;
+            border-bottom: 2px solid #ccc;
+            cursor: pointer;
+        }
+        .tab {
+            padding: 10px 20px;
+            border-right: 1px solid #ccc;
+            font-weight: bold;
+            color: #333;
+        }
+        .tab:last-child {
+            border-right: none;
+        }
+        .tab:hover {
+            background-color: #f0f0f0;
+        }
+        .tab.active {
+            background-color: #ddd;
+            color: #000;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+            margin-top: -1px;
+        }
+        .content.active {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Career Prospects</h1>
+    <h1>Career Prospects</h1>
 
-        <div>
-            <h2 class="collapsible">Long-Term Goal</h2>
-            <div class="details">
-                <p>My ultimate goal is to establish my own company with the following key elements:</p>
-                <ul>
-                    <li>A mission that is meaningful to me personally.</li>
-                    <li>A focus on high-tech solutions, utilizing innovative technologies and methods to solve complex problems.</li>
-                </ul>
-                <p>I believe that becoming an expert data scientist with deep business knowledge, ample experience, and strong communication skills will enable me to achieve this goal.</p>
-            </div>
-        </div>
+    <div class="tab-container">
+        <div class="tab" data-target="content1">Long-Term Goal</div>
+        <div class="tab" data-target="content2">Career Path Outline</div>
+        <div class="tab" data-target="content3">How Will a Master’s Degree Help Me?</div>
+        <div class="tab" data-target="content4">What Requirements Do I Currently Meet?</div>
+    </div>
 
-        <div>
-            <h2 class="collapsible">Career Path Outline</h2>
-            <div class="details">
-                <p>While many factors will influence my future, the main outline of my career path is as follows:</p>
-                <ul>
-                    <li><strong>2027:</strong> Graduate with a Master’s degree. Begin working as a Junior Data Scientist, likely in a research role. Start learning about product management, either through self-study or by enrolling in a course.</li>
-                    <li><strong>2029:</strong> Work as a Senior Data Scientist. Acquire any additional skills needed to transition into a Product Manager role within the data field. Begin seeking a Product Manager position.</li>
-                    <li><strong>2032:</strong> Work as a Product Manager.</li>
-                </ul>
-            </div>
-        </div>
+    <div id="content1" class="content">
+        <p>My ultimate goal is to establish my own company with the following key elements:</p>
+        <ul>
+            <li>A mission that is meaningful to me personally.</li>
+            <li>A focus on high-tech solutions, utilizing innovative technologies and methods to solve complex problems.</li>
+        </ul>
+        <p>I believe that becoming an expert data scientist with deep business knowledge, ample experience, and strong communication skills will enable me to achieve this goal.</p>
+    </div>
 
-        <div>
-            <h2 class="collapsible">How Will a Master’s Degree Help Me?</h2>
-            <div class="details">
-                <p>Explain how your Master’s degree will contribute to achieving your long-term goals, such as gaining advanced technical knowledge, networking opportunities, and exposure to industry practices.</p>
-            </div>
-        </div>
+    <div id="content2" class="content">
+        <p>While many factors will influence my future, the main outline of my career path is as follows:</p>
+        <ul>
+            <li><strong>2027:</strong> Graduate with a Master’s degree. Begin working as a Junior Data Scientist, likely in a research role. Start learning about product management, either through self-study or by enrolling in a course.</li>
+            <li><strong>2029:</strong> Work as a Senior Data Scientist. Acquire any additional skills needed to transition into a Product Manager role within the data field. Begin seeking a Product Manager position.</li>
+            <li><strong>2032:</strong> Work as a Product Manager.</li>
+        </ul>
+    </div>
 
-        <div>
-            <h2 class="collapsible">What Requirements for My Future Goal Do I Currently Meet?</h2>
-            <div class="details">
-                <p>Evaluate your current skills, knowledge, and experience, and identify which aspects already align with your future goals. This may include technical expertise, relevant experience, or other qualifications.</p>
-            </div>
-        </div>
-        
-        <img src="pic/career.png" alt="Career Path Image">
+    <div id="content3" class="content">
+        <p>Explain how your Master’s degree will contribute to achieving your long-term goals, such as gaining advanced technical knowledge, networking opportunities, and exposure to industry practices.</p>
+    </div>
+
+    <div id="content4" class="content">
+        <p>Evaluate your current skills, knowledge, and experience, and identify which aspects already align with your future goals. This may include technical expertise, relevant experience, or other qualifications.</p>
     </div>
 
     <script>
-        document.querySelectorAll('.collapsible').forEach(function(title) {
-            title.addEventListener('click', function() {
-                let details = this.nextElementSibling;
-                if (details.style.display === 'none' || details.style.display === '') {
-                    details.style.display = 'block';
-                } else {
-                    details.style.display = 'none';
-                }
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab').forEach(item => item.classList.remove('active'));
+
+                // Hide all content divs
+                document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked tab
+                this.classList.add('active');
+
+                // Show the corresponding content div
+                const target = this.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
             });
         });
+
+        // Automatically click the first tab to show the first content by default
+        document.querySelector('.tab').click();
     </script>
 </body>
 </html>
