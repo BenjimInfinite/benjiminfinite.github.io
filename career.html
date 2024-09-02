@@ -69,10 +69,10 @@
         document.querySelectorAll('.collapsible').forEach(function(title) {
             title.addEventListener('click', function() {
                 let details = this.nextElementSibling;
-                if (details.style.display === 'block') {
-                    details.style.display = 'none';
-                } else {
+                if (details.style.display === 'none' || details.style.display === '') {
                     details.style.display = 'block';
+                } else {
+                    details.style.display = 'none';
                 }
             });
         });
