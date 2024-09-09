@@ -106,7 +106,7 @@ main {
     }
 }
 
-/* .card[data-detail="career"] {
+.card[data-detail="career"] {
     background-image: url('pic/career.png');
 }
 .card[data-detail="education"] {
@@ -129,7 +129,7 @@ main {
 }
 .card[data-detail="volunteer"] {
     background-image: url('pic/volunteer1.jpg');
-} */
+}
 
 /* Loading Bar Container */
 #loading-bar-container {
