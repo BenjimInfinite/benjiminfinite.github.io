@@ -51,12 +51,12 @@
             max-width: 100%;
             height: auto;
         }
-        .transcript-section {
-            margin-top: 20px;
+        .transcript-section a {
+            color: rgb(0, 79, 163);
+            text-decoration: none;
         }
-        .transcript-section input[type="file"] {
-            display: block;
-            margin: 10px 0;
+        .transcript-section a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -96,8 +96,11 @@
 
     <div class="section transcript-section">
         <h2>Transcript Files</h2>
-        <p>Upload your transcripts here:</p>
-        <input type="file" id="transcript-upload" name="transcript" accept=".pdf, .jpg, .png">
+        <p>View my transcript files here:</p>
+        <ul>
+            <li><a href="transcripts/EE_Benyamin_Behbudi_Transcript.pdf" target="_blank">Electrical Engineering Major Transcript (PDF)</a></li>
+            <li><a href="transcripts/CE_Benyamin_behbudi_Transcript.pdf" target="_blank">Computer Engineering Minor Transcript (PDF)</a></li>
+        </ul>
     </div>
     
 </body>
