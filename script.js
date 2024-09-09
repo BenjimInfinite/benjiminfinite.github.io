@@ -1,3 +1,10 @@
+function goUpAndRefresh() {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
+    setTimeout(function() {
+        location.reload(); // Refresh the page after scrolling
+    }, 1000); // Delay refreshing the page to allow time for scrolling
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const detailSection = document.getElementById('detail-section');
     const cards = document.querySelectorAll('.card');

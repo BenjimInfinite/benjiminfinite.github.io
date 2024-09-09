@@ -1,3 +1,21 @@
+#upRefreshButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Make sure it appears above other elements */
+    padding: 10px 15px;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#upRefreshButton:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
