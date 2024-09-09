@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #013d33; /* Dark teal */
+    background-color: rgb(10, 100, 163);
     color: #ffffff; /* White text */
     padding: 10px;
     text-align: center;
