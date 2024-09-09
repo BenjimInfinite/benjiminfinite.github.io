@@ -14,14 +14,14 @@ header {
 }
 
 header a {
-    color: #ffab00; /* Amber */
+    color: #ffffff; /* Amber */
     text-decoration: none;
 }
 
 header a:hover {
     text-decoration: none;    
     font-weight: bold; /* Bold text on hover */
-    color: white; /* Change text color on hover */
+    color: rgb(199, 199, 199); /* Change text color on hover */
 }
 
 main {
