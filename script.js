@@ -80,9 +80,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const closePopup = document.getElementById('close-popup');
     const lastUpdateTime = document.getElementById('last-update-time');
 
-    // Set the last update time
-    const now = new Date();
-    lastUpdateTime.textContent = now.toLocaleDateString();
+    // Set the fixed last update time
+    lastUpdateTime.textContent = '09/10/2024';
 
     popup.style.display = 'block';
 
@@ -98,3 +97,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 });
+
