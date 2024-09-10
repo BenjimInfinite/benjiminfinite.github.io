@@ -83,6 +83,7 @@ main {
 
 .card:hover .card-overlay {
     opacity: 0;
+    transform: scale(1.05); 
 }
 
 .card h2 {
