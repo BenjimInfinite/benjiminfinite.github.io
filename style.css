@@ -3,14 +3,21 @@
     bottom: 20px;
     right: 20px;
     z-index: 100; /* Make sure it appears above other elements */
-    padding: 10px 15px;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Ensure equal width and height */
+    padding: 0; /* Remove padding to keep the shape circular */
     background-color: #007BFF; /* Button color */
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 50%; /* Make it circular */
     cursor: pointer;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 #upRefreshButton:hover {
     background-color: #0056b3; /* Darker color on hover */
