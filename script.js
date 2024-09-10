@@ -75,26 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Display the popup
-    const popup = document.getElementById('welcome-popup');
-    const closePopup = document.getElementById('close-popup');
+    const closeBanner = document.getElementById('close-banner');
+    const infoBanner = document.getElementById('info-banner');
     const lastUpdateTime = document.getElementById('last-update-time');
 
     // Set the fixed last update time
     lastUpdateTime.textContent = '09/10/2024';
 
-    popup.style.display = 'block';
-
-    // Close the popup when the user clicks on <span> (x)
-    closePopup.onclick = function() {
-        popup.style.display = 'none';
-    }
-
-    // Close the popup when the user clicks anywhere outside of the popup
-    window.onclick = function(event) {
-        if (event.target === popup) {
-            popup.style.display = 'none';
-        }
+    // Close the banner when the user clicks on <span> (x)
+    closeBanner.onclick = function() {
+        infoBanner.style.display = 'none';
     }
 });
-
