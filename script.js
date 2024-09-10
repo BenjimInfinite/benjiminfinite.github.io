@@ -73,3 +73,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 })
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Display the popup
+    const popup = document.getElementById('welcome-popup');
+    const closePopup = document.getElementById('close-popup');
+    const lastUpdateTime = document.getElementById('last-update-time');
+
+    // Set the last update time
+    const now = new Date();
+    lastUpdateTime.textContent = now.toLocaleDateString();
+
+    popup.style.display = 'block';
+
+    // Close the popup when the user clicks on <span> (x)
+    closePopup.onclick = function() {
+        popup.style.display = 'none';
+    }
+
+    // Close the popup when the user clicks anywhere outside of the popup
+    window.onclick = function(event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    }
+});
