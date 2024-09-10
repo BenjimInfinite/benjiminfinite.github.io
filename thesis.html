@@ -53,45 +53,45 @@
 
     <div class="section">
         <h2>Abstract</h2>
-        <p>This thesis addresses the design and implementation of a trading system in the cryptocurrency market, aimed at maximizing profit while reducing risk. The system uses a control-based approach to predict price direction, rather than focusing solely on statistical price predictions. A combination of methodologies like SINDy (Sparse Identification of Nonlinear Dynamics) and Model Predictive Control (MPC) is applied to identify system dynamics and optimize trading strategies.</p>
+        <p>Designing a trading system in the cryptocurrency market always poses numerous challenges, with one of the most critical being the recognition of price movements. This study moves away from using price prediction or currency direction as the basis for system formation. Instead, statistical methods are employed to handle the complexities of price prediction and enable profit optimization using control methods. By utilizing the SINDy system detection algorithm, both system inputs and outputs are determined, and the system's governing equations are derived. With these equations, a predictive control method is applied to minimize the cost function by estimating future system behavior. A risk manager further enhances the system, ensuring consistent profitability with two objective functions.</p>
     </div>
 
     <div class="section">
         <h2>Introduction and Problem Statement</h2>
-        <p>The cryptocurrency market is known for its high volatility, presenting challenges in identifying profitable trading opportunities. This project focuses on developing a system that improves profitability while managing risks by using control theory and machine learning techniques to optimize trading decisions.</p>
+        <p>The cryptocurrency market presents significant volatility, making it difficult to predict price movements effectively. The goal of this project is to design a control-based trading system that enhances profitability while navigating the complexities of price fluctuations without directly relying on price direction predictions.</p>
         <ul>
-            <li><strong>Main Problem:</strong> High volatility in crypto markets makes it difficult to predict price movements accurately.</li>
-            <li><strong>Objective:</strong> Develop a system that predicts market trends and adjusts trading strategies dynamically to maximize profits while minimizing risks.</li>
+            <li><strong>Key Issue:</strong> The high volatility and unpredictability of the crypto market.</li>
+            <li><strong>Objective:</strong> Develop a system that optimizes profits using control theory, minimizing the need for precise price predictions.</li>
         </ul>
     </div>
 
     <div class="section">
         <h2>Methodology</h2>
-        <p>The system uses a multi-step approach involving both classical control methods and machine learning:</p>
+        <p>This system is developed through the following steps:</p>
         <ul>
-            <li><strong>System Design:</strong> The control system is designed using methodologies such as Proportional-Integral (PI), Linear Quadratic Regulator (LQR), and Model Predictive Control (MPC) for optimizing trades.</li>
-            <li><strong>Price Prediction:</strong> A key feature is predicting price direction (rise or fall) using binary classification models, rather than predicting exact prices.</li>
-            <li><strong>System Identification:</strong> The SINDy algorithm is used to identify the system's dynamics and derive the equations governing its behavior.</li>
+            <li><strong>System Identification:</strong> The SINDy (Sparse Identification of Nonlinear Dynamics) algorithm is used to identify the governing equations of the system, setting up the control framework.</li>
+            <li><strong>Predictive Control:</strong> The Model Predictive Control (MPC) method minimizes the cost function by forecasting future system behavior based on identified equations.</li>
+            <li><strong>Risk Management:</strong> A risk manager is implemented to ensure consistent profit by managing the inherent risks in crypto trading, with two objective functions balancing profit and risk.</li>
         </ul>
     </div>
 
     <div class="section">
         <h2>Results and Conclusions</h2>
-        <p>The proposed control system, optimized through MPC, performed significantly better than random strategies. Key findings include:</p>
+        <p>The developed system successfully navigated the challenges of cryptocurrency trading, producing consistent profits while effectively managing risks. The key results include:</p>
         <ul>
-            <li>Improved profitability by dynamically adjusting the take-profit and stop-loss levels.</li>
-            <li>Effective management of trading risks through a combination of control techniques and machine learning algorithms like Random Forest.</li>
-            <li>Potential for future expansion to handle multiple cryptocurrencies and implement compounding strategies.</li>
+            <li>Effective identification of system equations using the SINDy algorithm.</li>
+            <li>Profit optimization achieved through MPC by forecasting and adjusting system inputs dynamically.</li>
+            <li>Risk management ensured stability and minimized losses, even in highly volatile market conditions.</li>
         </ul>
     </div>
 
     <div class="section">
         <h2>Future Work</h2>
-        <p>The system can be further enhanced by:</p>
+        <p>Potential future enhancements to the system include:</p>
         <ul>
-            <li>Incorporating additional cryptocurrencies into the portfolio to diversify risk.</li>
-            <li>Introducing reinvestment strategies to exponentially grow the account size.</li>
-            <li>Implementing more sophisticated risk management techniques for handling market correlations.</li>
+            <li>Expanding the system to include multiple cryptocurrencies and portfolios.</li>
+            <li>Implementing reinvestment strategies to maximize compound growth over time.</li>
+            <li>Further refining the risk management approach to handle more complex market correlations.</li>
         </ul>
     </div>
 </body>
