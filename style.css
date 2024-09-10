@@ -114,6 +114,19 @@ main {
     }
 }
 
+.card-group2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .card-group2 {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+}
+
 .card[data-detail="career"] {
     background-image: url('pic/career.png');
 }
