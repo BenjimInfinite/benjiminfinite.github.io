@@ -203,7 +203,8 @@ main {
 /* Info Banner */
 .info-banner {
     display: block; /* Visible by default */
-    background-color: #fefefe;
+    background-color: #000000;
+    color: #ffffff;
     padding: 20px;
     border: 1px solid #888;
     margin: 10px 0;
@@ -223,10 +224,10 @@ main {
     top: 10px;
     right: 10px;
     font-size: 20px;
-    color: #aaa;
+    color: #383838;
     cursor: pointer;
 }
 
 .close-banner:hover {
-    color: black;
+    color: rgb(255, 0, 0);
 }
