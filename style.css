@@ -211,6 +211,7 @@ main {
     margin: 2px auto;
     width: 60%; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this line to make sure the close button is positioned relative to the banner */
 }
 
 .info-banner h1 {
@@ -222,7 +223,7 @@ main {
 }
 
 .close-banner {
-    position: relative;
+    position: absolute; /* Change to absolute positioning */
     top: 10px;
     right: 10px;
     font-size: 20px;
@@ -233,3 +234,4 @@ main {
 .close-banner:hover {
     color: rgb(255, 0, 0);
 }
+
