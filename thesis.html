@@ -44,13 +44,14 @@
             max-width: 100%;
             height: auto;
         }
-        .card-group2 {
+        .card-groupt {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
+            grid-column: span 2;
         }
         @media (max-width: 768px) {
-            .card-group2 {
+            .card-groupt {
                 grid-template-columns: 1fr; /* 1 card per row */
             }
         }        
@@ -58,7 +59,7 @@
 </head>
 <body>
     <h1 id="thesis-presentation">B.Sc. Thesis Presentation</h1>
-    <div class="card-group2"></div>
+    <div class="card-groupt">
         <div class="card" style="background-image: url('pic/Thesis/20240310_122413.jpg');"></div>
         <div class="card" style="background-image: url('pic/Thesis/IMG_20240310_201639_110.jpg');"></div>
     </div>
