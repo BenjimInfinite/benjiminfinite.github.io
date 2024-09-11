@@ -205,13 +205,13 @@ main {
     display: block;
     background-color: #373434;
     color: #ffffff;
-    padding: 20px;
+    padding: 5px;
     border: 2px solid #888;
-    margin: 10px auto;
+    border-radius: 20%;
+    margin: 2px auto;
     width: 60%; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .info-banner h1 {
     margin: 0;
@@ -225,7 +225,7 @@ main {
     position: relative;
     top: 10px;
     right: 10px;
-    font-size: 30px;
+    font-size: 20px;
     color: #d1d1d5;
     cursor: pointer;
 }
