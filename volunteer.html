@@ -41,11 +41,21 @@
             max-width: 100%;
             height: auto;
         }
+        .card-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        @media (max-width: 768px) {
+            .card-group {
+                grid-template-columns: 1fr; /* 1 card per row */
+            }
+        }
     </style>
 </head>
 <body>
     <h1 id="volunteer-activities">Volunteer Activities</h1>
-    <div class="card-group"></div>
+    <div class="card-group">
         <div class="card" style="background-image: url('pic/Rafe/20200806_163501.jpg');"></div>
         <div class="card" style="background-image: url('pic/Rafe/20200807_203519.jpg');"></div>
         <div class="card" style="background-image: url('pic/Rafe/IMG_20210329_201024_002.jpg');"></div>

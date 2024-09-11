@@ -17,8 +17,6 @@
     align-items: center;
 }
 
-
-
 #upRefreshButton:hover {
     background-color: #0056b3; /* Darker color on hover */
 }
@@ -165,7 +163,6 @@ main {
     display: none; /* Initially hidden */
 }
 
-/* Loading Bar */
 #loading-bar {
     height: 100%;
     width: 0;
@@ -174,16 +171,15 @@ main {
 }
 
 #detail-section {
-    background-color: #ffffff; /* White background */
-    border: 1px solid #b2dfdb; /* Light teal border */
+    background-color: #ffffff;
+    border: 1px solid #b2dfdb;
     border-radius: 6px;
     padding: 20px;
     margin: 20px;
     font-size: 1.2em;
-    color: #004d40; /* Dark teal text */
+    color: #004d40;
 }
 
-/* Remove or comment out keyframes and animation rules */
 @keyframes moveLeftThenBack {
     0% {
         transform: translateX(0);
