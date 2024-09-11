@@ -38,19 +38,39 @@
         ul {
             margin-left: 40px;
         }
+        .section img {
+            display: block;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+        .card-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        @media (max-width: 768px) {
+            .card-group {
+                grid-template-columns: 1fr; /* 1 card per row */
+            }
+        }        
     </style>
 </head>
 <body>
     <h1 id="thesis-presentation">B.Sc. Thesis Presentation</h1>
+    <div class="card-group"></div>
+        <div class="card" style="background-image: url('pic/Thesis/20240310_122413.jpg');"></div>
+        <div class="card" style="background-image: url('pic/Thesis/IMG_20240310_201639_110.jpg');"></div>
+    </div>
 
     <div class="section">
         <h2>Thesis Title: Developing a Control System to Achieve Profitable Strategies in the Cryptocurrency Market</h2>
         <p><strong>Supervisors:</strong> Dr. Mohammad Bagher Menhaj, Dr. Amir Abolfazl Suratgar<br>
-        <strong>Presented by:</strong> Benyamin Behbudi<br>
+        <strong>Presented by:</strong> Benyamin Behbudi, <a href="https://www.linkedin.com/in/fatemeh-rafiee1/" target="_blank" rel="noopener noreferrer">Fatemeh Rafie</a><br>
         <strong>University:</strong> Amirkabir University of Technology<br>
         <strong>Date:</strong> March 2024</p>
     </div>
-
+    
     <div class="section">
         <h2>Abstract</h2>
         <p>Designing a trading system in the cryptocurrency market always poses numerous challenges, with one of the most critical being the recognition of price movements. This study moves away from using price prediction or currency direction as the basis for system formation. Instead, statistical methods are employed to handle the complexities of price prediction and enable profit optimization using control methods. By utilizing the SINDy system detection algorithm, both system inputs and outputs are determined, and the system's governing equations are derived. With these equations, a predictive control method is applied to minimize the cost function by estimating future system behavior. A risk manager further enhances the system, ensuring consistent profitability with two objective functions.</p>
