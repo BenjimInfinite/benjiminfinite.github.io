@@ -27,12 +27,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa; /* Light cyan background */
-    color: #004d40; /* Dark teal text color */
+    background-color: #e0f7fa; 
+    color: #004d40; 
 }
 
 header {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(1, 4, 57);
     color: #ffffff; /* White text */
     padding: 10px;
     text-align: center;
@@ -200,23 +200,12 @@ main {
     animation: moveLeftThenBack 0.5s ease; /* Duration and timing function */
 }
 
-/* Popup container */
-.popup {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
-}
 
 /* Info Banner */
 .info-banner {
     display: block; /* Visible by default */
-    background-color: #000000;
+    background-color: #e1dee6;
+    color: #171717;
     padding: 20px;
     border: 1px solid #888;
     margin: 10px 0;
