@@ -27,7 +27,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa; /* Light cyan background */
+    background-color: #f4f4f4;
     color: #004d40; /* Dark teal text color */
 }
 
@@ -202,14 +202,17 @@ main {
 
 /* Info Banner */
 .info-banner {
-    display: block; /* Visible by default */
-    background-color: #000000;
+    display: block;
+    background-color: #dfd9d9;
     color: #ffffff;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #888;
     margin: 10px 0;
     position: relative;
+    width: 60%; /* Set the width to 60% */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
+
 
 .info-banner h1 {
     margin: 0;
