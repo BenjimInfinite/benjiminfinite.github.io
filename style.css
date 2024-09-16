@@ -146,6 +146,9 @@ main {
 .card[data-detail="experience"] {
     background-image: url('pic/experience.webp');
 }
+.card[data-detail="skills"] {
+    background-image: url('pic/skills.png');
+}
 .card[data-detail="volunteer"] {
     background-image: url('pic/volunteer1.jpg');
 }
