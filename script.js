@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const lastUpdateTime = document.getElementById('last-update-time');
 
     // Set the fixed last update time
-    lastUpdateTime.textContent = '09/10/2024';
+    lastUpdateTime.textContent = '09/16/2024';
 
     // Close the banner when the user clicks on <span> (x)
     closeBanner.onclick = function() {
